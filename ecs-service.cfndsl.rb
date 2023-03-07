@@ -24,7 +24,7 @@ CloudFormation do
 
   Logs_LogGroup('LogGroup') {
     LogGroupName loggroup_name
-    RetentionInDays "#{log_retention}"
+    RetentionInDays log_retention
   }
 
   definitions, task_volumes, secrets = Array.new(3){[]}
